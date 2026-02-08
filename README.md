@@ -5,16 +5,14 @@ This repository contains the data and R code used in the analysis of the trade-o
 
 The code provided here is intended to reproduce the main empirical analyses and figures reported in the associated manuscript.
 ## Data
-All data files are stored in the `data/` directory.
+All datasets used in this study are publicly available (open data) and are provided in the `data/` directory.
 
 - `data/raw/`  
-  Contains the original data sources used in the analysis (e.g., COVID-19 cases and deaths, suicide counts, population statistics).
+  Contains the original data sources used in the analysis.
 
 - `data/processed/`  
-  Contains processed datasets and intermediate objects generated from the raw data and used for model estimation and visualization.
-
-If certain data cannot be publicly shared, instructions for access or data sources are documented within the corresponding directory.
-
+  Contains pre-fitted Bayesian model objects saved as `.rds` files (posterior draws). Because MCMC sampling can yield slightly different draws across environments even with the same settings, these files are provided to ensure exact numerical reproduction of the reported results and figures.
+  
 ## Code
 All analysis scripts are written in R and are located in the `code/` directory.  
 The scripts are intended to be executed in the following order:
@@ -33,12 +31,11 @@ The scripts are intended to be executed in the following order:
 
 ## Reproducibility
 ### Software environment
-- R (version 4.x)
-- Key R packages: brms, cmdstanr, deSolve, tidyverse
+- R (version 4.5.0)
+- Key R packages: deSolve (version 1.40), nloptr (version 2.2.1), forecast (version 8.24.0), brms (version 2.22.0), cmdstanr (version 0.9.0)
 
 ### Notes
 - Some model estimation procedures are computationally intensive and may require several hours to run.
-- Where applicable, precomputed intermediate results are provided to facilitate replication without re-running all models from scratch.
 
 ## Contact
 For questions regarding the code or data, please contact the corresponding author.
