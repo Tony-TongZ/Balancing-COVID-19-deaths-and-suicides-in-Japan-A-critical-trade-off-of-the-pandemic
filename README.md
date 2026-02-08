@@ -42,7 +42,7 @@ The scripts should be executed in the order listed below. Note that Scripts `05_
 
 ### Notes
 - Some components of the analysis pipeline are computationally intensive and may require substantial computing time (several hours) to run from scratch.
-- To avoid numerical discrepancies arising from MCMC sampling across environments, pre-fitted `.rds` files are provided to ensure exact reproduction of the reported results and figures.
+- Pre-fitted `.rds` files are provided to ensure exact reproduction of the reported results and figures, as MCMC sampling may exhibit minor numerical differences across computing environments even under identical software versions and settings.
 
 ## Contact
 For questions regarding the code or data, please contact the corresponding author.
