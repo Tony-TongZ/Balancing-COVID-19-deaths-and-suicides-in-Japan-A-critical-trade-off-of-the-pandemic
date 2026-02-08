@@ -8,10 +8,10 @@ The code provided here is intended to reproduce the main empirical analyses and 
 All datasets used in this study are publicly available (open data) and are provided in the `data/` directory.
 
 - `data/raw/`  
-  Contains the original data sources used in the analysis.
+  Contains the original data sources used in the analysis (e.g., COVID-19 cases and deaths, suicide counts).
 
 - `data/processed/`  
-  Contains pre-fitted Bayesian model objects saved as `.rds` files (posterior draws). Because MCMC sampling can yield slightly different draws across environments even with the same settings, these files are provided to ensure exact numerical reproduction of the reported results and figures.
+  Contains pre-fitted Bayesian model objects saved as `.rds` files (posterior draws).
   
 ## Code
 All analysis scripts are written in R and are located in the `code/` directory.  
@@ -35,7 +35,8 @@ The scripts are intended to be executed in the following order:
 - Key R packages: deSolve (version 1.40), nloptr (version 2.2.1), forecast (version 8.24.0), brms (version 2.22.0), cmdstanr (version 0.9.0)
 
 ### Notes
-- Some model estimation procedures are computationally intensive and may require several hours to run.
+- Some components of the analysis pipeline are computationally intensive and may require substantial computing time (several hours) to run from scratch.
+- To avoid numerical discrepancies arising from MCMC sampling across environments, pre-fitted `.rds` files are provided to ensure exact reproduction of the reported results and figures.
 
 ## Contact
 For questions regarding the code or data, please contact the corresponding author.
