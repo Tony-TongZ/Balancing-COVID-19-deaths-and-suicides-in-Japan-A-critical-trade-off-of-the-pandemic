@@ -31,8 +31,8 @@ The scripts are intended to be executed in the following order:
 
 ## Reproducibility
 ### Software environment
-- R (version 4.5.0)
-- Key R packages: deSolve (version 1.40), nloptr (version 2.2.1), forecast (version 8.24.0), brms (version 2.22.0), cmdstanr (version 0.9.0)
+- R (version 4.5.0).
+- Key R packages: deSolve (version 1.40), nloptr (version 2.2.1), forecast (version 8.24.0), brms (version 2.22.0), cmdstanr (version 0.9.0).
 
 ### Notes
 - Some components of the analysis pipeline are computationally intensive and may require substantial computing time (several hours) to run from scratch.
